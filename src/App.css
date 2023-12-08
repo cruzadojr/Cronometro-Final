@@ -1,6 +1,7 @@
 body {
-  /* background: #240b36; */
-  background: midnightblue;    
+  background: #2a2b29;
+    
+  font-family: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -10,20 +11,56 @@ body {
 }
 
 .main-section {
-  background: transparent;
-  max-width: 550px;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
   margin: 30px auto;
+  height: 100vh; 
 }
 
-.clock-holder {
+.barrita {
   width: 100%;
-  background: ghostwhite;
+  background: black;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background: maroon;
+  padding: 10px 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+ .clock-holder {
+  width: 100%;
+  background: #09020c;
   margin: 30px auto;
   position: relative;
   border-radius: 50%;
 }
-
 
 .stopwatch {
   padding: 60px 0px;
@@ -80,3 +117,14 @@ body {
   border: 2px solid #00ABA9;
   color: #fff;
 }
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100%;
+}
+

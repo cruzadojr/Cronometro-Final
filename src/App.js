@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import DisplayComponent from './Components/DisplayComponent';
 import BtnComponent from './Components/BtnComponent';
+import Navbar from './Components/nav';
+import Footer from './Components/footer';
 import './App.css';
 
 function App() {
@@ -51,12 +53,16 @@ function App() {
 
   return (
     <div className="main-section">
+          <div className='barrita'>
+            <Navbar />      
+          </div>
       <div className='clock-holder'>
         <div className='stopwatch'>
             <DisplayComponent time={time}/>
             <BtnComponent status={status} resume={resume} reset={reset} stop={stop} start={start}/>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
